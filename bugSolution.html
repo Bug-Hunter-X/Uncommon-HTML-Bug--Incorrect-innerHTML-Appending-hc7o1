@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correctly appending text using insertAdjacentHTML
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', '<p>This text should be appended.</p>');
+  </script>
+</body>
+</html>
